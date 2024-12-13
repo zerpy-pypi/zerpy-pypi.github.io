@@ -99,10 +99,13 @@
 
     <section id="usage">
       <h2>Usage</h2>
-      <p>Here's an example of how to use ZerPy for database management:</p>
-      <pre><code>from zerpy import db
-database = db.connect("example.db")
-database.load()</code></pre>
+      <p>Here's an example of how to use ZerPy for database and envirenements management:</p>
+      <pre><code>import zerpy, os
+from zerpy import db, env
+db = zerpy.connect("example.db")
+db.load()
+env.load()
+API_KEY = os.getenv("API_KEY")</code></pre>
     </section>
 
     <section id="api">
