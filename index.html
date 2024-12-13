@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZerPy - Home</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000; /* Black Background */
+      color: white;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      background: #121212; /* Dark Gray */
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #007bff; /* Blue */
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    nav ul {
+      list-style: none;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: white;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid transparent;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      border-bottom: 2px solid #007bff;
+    }
+
+    #hero {
+      text-align: center;
+      padding: 5rem 1rem;
+      background: linear-gradient(180deg, #121212, #000);
+    }
+
+    #hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: slideIn 1s ease-in-out;
+    }
+
+    #hero p {
+      margin-bottom: 2rem;
+      color: #bbb;
+      font-size: 1.2rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    #hero a {
+      padding: 0.8rem 2rem;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 0.3s;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    #hero a:hover {
+      background: #0056b3;
+    }
+
+    section {
+      padding: 4rem 1rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #007bff;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      max-width: 800px;
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #121212;
+      margin-top: 2rem;
+      color: #bbb;
+    }
+
+    footer a {
+      color: #007bff;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZerPy</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="/docs">Documentation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Welcome to ZerPy</h2>
+    <p>The ultimate Python library for database management, environment handling, and utilities.</p>
+    <a href="/docs">Get Started</a>
+  </section>
+
+  <section id="about">
+    <h2>About ZerPy</h2>
+    <div class="card">
+      <p>ZerPy is a Python library that simplifies development by providing tools for database management, environment variable handling, and utility functions. Developed by <strong>MohamedLunar</strong>, ZerPy is perfect for developers seeking efficiency and ease.</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="card">
+      <ul>
+        <li>Manage databases seamlessly (SQLite, MySQL, PostgreSQL).</li>
+        <li>Load and manage environment variables easily.</li>
+        <li>Access various utility functions for string manipulation and validation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+      <p>Visit the <a href="https://github.com/MohamedLunar/zerpy" target="_blank">GitHub repository</a> for more information.</p>
+      <p>Email us at <a href="mailto:support.zerpy@gmail.com">support.zerpy@gmail.com</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ZerPy Team <a href="/docs">Read Documentation</a>.</p>
+  </footer>
+</body>
+</html>

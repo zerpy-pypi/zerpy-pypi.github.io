@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZerPy Documentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: white;
+    }
+
+    header {
+      background: #121212;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #007bff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: white;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-bottom: 1rem;
+    }
+
+    p, ul {
+      margin-bottom: 1.5rem;
+    }
+
+    pre {
+      background: #121212;
+      color: #00ffcc;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    footer {
+      background: #121212;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZerPy Documentation</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#install">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#api">API Reference</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>ZerPy is a powerful Python library that helps developers manage databases, environment variables, and utilities in a simple and efficient way.</p>
+    </section>
+
+    <section id="install">
+      <h2>Installation</h2>
+      <p>Install ZerPy using pip:</p>
+      <pre>pip install zerpy</pre>
+    </section>
+
+    <section id="usage">
+      <h2>Usage</h2>
+      <p>Here's an example of how to use ZerPy for database management:</p>
+      <pre><code>from zerpy import db
+database = db.connect("example.db")
+database.load()</code></pre>
+    </section>
+
+    <section id="api">
+      <h2>API Reference</h2>
+      <p>Visit the <a href="https://github.com/MohamedLunar/zerpy">GitHub page</a> for full API documentation.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 ZerPy Team <a href="/index.html">Return Home</a>.</p>
+  </footer>
+</body>
+</html>
